@@ -1,0 +1,3 @@
+﻿  softRenderer.cpp
+d:\doc\softrenderer\softrenderer\softrenderer.cpp(293): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  softRenderer.vcxproj -> D:\Doc\softRenderer\Debug\softRenderer.exe
