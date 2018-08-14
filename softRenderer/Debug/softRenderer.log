@@ -1,4 +1,4 @@
 ﻿  softRenderer.cpp
-d:\doc\softrenderer\softrenderer\softrenderer.cpp(306): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\doc\softrenderer\softrenderer\softrenderer.cpp(815): warning C4838: 从“int”转换到“DWORD”需要收缩转换
-  softRenderer.vcxproj -> D:\Doc\softRenderer\Debug\softRenderer.exe
+d:\softrenderer\softrenderer\softrenderer.cpp(306): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\softrenderer\softrenderer\softrenderer.cpp(815): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+  softRenderer.vcxproj -> D:\softRenderer\Debug\softRenderer.exe
