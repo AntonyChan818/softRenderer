@@ -224,5 +224,26 @@ typedef struct {
 #define MAX_NUM_CAMERA 10
 extern camera_t cameras[MAX_NUM_CAMERA];
 extern int camera_count;
+
+//欧拉角实现摄像机旋转
+void camera_init_by_euler(camera_t *camera, float yaw, float pitch);
+void camera_init_projection(camera_t *camera);
+void camera_update(camera_t *camera);
+
+typedef struct {
+	float u, v;
+} texcoord_t;
+void texcoord_add(texcoord_t *c, texcoord_t *a, const texcoord_t *b);
+void texcoord_scale(texcoord_t *t, float k);
+void texcoord_interpolating(texcoord_t *dest, const texcoord_t *src1, const texcoord_t *src2, const texcoord_t *src3, float a, float b, float c);
+
+//插值寄存
+typedef struct {
+	float a, b, c, d;
+} storage_t;
+void storage_add(storage_t *c, storage_t *a, const storage_t *b);
+void storage_scale(storage_t *t, float k);
+void storage_interpolating(storage_t *dest, const storage_t *src1, const storage_t *src2, const storage_t *src3, float a, float b, float c);
+
 #endif // !headFile1_h
 
